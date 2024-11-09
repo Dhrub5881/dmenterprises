@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Improve Google Reviews & Ratings | DM Enterprises</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f4fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #87cefa;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        .container h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .service-list {
+            list-style-type: square;
+            padding-left: 40px;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .testimonial {
+            background-color: #f0f8ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #87cefa;
+        }
+
+        .testimonial p {
+            font-size: 1.2em;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #87cefa;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        .btn:hover {
+            background-color: #71bfe1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form input[type="submit"] {
+            background-color: #87cefa;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #71bfe1;
+        }
+
+        /* Image Styling */
+        .img-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation & Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#services" onclick="showSection('services')">Services</a></li>
+                <li><a href="#testimonials" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>DM Enterprises</h1>
+        <h2>Boost Your Google Reviews & Ratings</h2>
+    </header>
+
+    <!-- Content Sections -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <div class="img-wrapper">
+                <img src="d:\Downloads\GoogleSellerRatings-1200x630-1.webp" alt="Google Reviews">
+            </div>
+            <h2>Welcome to DM Enterprises</h2>
+            <p>We are experts in enhancing your online reputation by boosting your Google reviews and improving customer feedback. Let us help you grow!</p>
+            <a href="#services" class="btn" onclick="showSection('services')">Explore Our Services</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="img-wrapper">
+                <img src="d:\Downloads\importance-of-online-reviews.png" alt="Our Services">
+            </div>
+            <h2>Our Services</h2>
+            <ul class="service-list">
+                <li>Google Review Management</li>
+                <li>Review Monitoring & Response Services</li>
+                <li>Strategies to Improve Ratings & Feedback</li>
+                <li>Reputation Building with Positive Reviews</li>
+            </ul>
+            <a href="#contact" class="btn" onclick="showSection('contact')">Contact Us for More Info</a>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial">
+                <p>"DM Enterprises helped us reach new heights by improving our Google reviews. Now our business is more credible!"</p>
+                <span>- John Doe, Business Owner</span>
+            </div>
+            <div class="testimonial">
+                <p>"Our online presence has strengthened since we started working with DM Enterprises. Highly recommend their services!"</p>
+                <span>- Jane Smith, Entrepreneur</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DM Enterprises - All Rights Reserved. Contact: <a href="mailto:dhruwmandal@gmail.com" style="color: #87cefa;">dhruwmandal@gmail.com</a></p>
+    </footer>
+
+    <!-- JavaScript for Section Navigation -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
