@@ -161,6 +161,25 @@
             border-radius: 10px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* New styles for the Thank You page */
+        .thank-you-page {
+            text-align: center;
+            padding: 50px;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #87cefa;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .back-to-home:hover {
+            background-color: #71bfe1;
+        }
     </style>
 </head>
 <body>
@@ -184,7 +203,7 @@
         <!-- Home Section -->
         <section id="home" class="active">
             <div class="img-wrapper">
-                <img src="file:///E:/dhruw/Html/webite%20image%201.png" alt="Google Reviews">
+                <img src="d:\Downloads\GoogleSellerRatings-1200x630-1.webp" alt="Google Reviews">
             </div>
             <h2>Welcome to DM Enterprises</h2>
             <p>We are experts in enhancing your online reputation by boosting your Google reviews and improving customer feedback. Let us help you grow!</p>
@@ -194,7 +213,7 @@
         <!-- Services Section -->
         <section id="services">
             <div class="img-wrapper">
-                <img src="file:///E:/dhruw/Html/website%20image%202.png" alt="Our Services">
+                <img src="d:\Downloads\importance-of-online-reviews.png" alt="Our Services">
             </div>
             <h2>Our Services</h2>
             <ul class="service-list">
@@ -210,12 +229,12 @@
         <section id="testimonials">
             <h2>Client Testimonials</h2>
             <div class="testimonial">
-                <p>"Thank you so much Dm enterprise your really help to improve my store rating and after rating improve my store become most search store in my area"</p>
-                <span>-Ayush CyberCafe, Business Owner</span>
+                <p>"DM Enterprises helped us reach new heights by improving our Google reviews. Now our business is more credible!"</p>
+                <span>- John Doe, Business Owner</span>
             </div>
             <div class="testimonial">
-                <p>"Our online presence has strengthened since we started working with DM Enterprises. Highly recommend their services"</p>
-                <span>- Food Plaza Restaurant , Business Owner</span>
+                <p>"Our online presence has strengthened since we started working with DM Enterprises. Highly recommend their services!"</p>
+                <span>- Jane Smith, Entrepreneur</span>
             </div>
         </section>
 
@@ -232,9 +251,9 @@
                 <input type="submit" value="Submit">
             </form>
         </section>
-    </div>
-    <!-- Thank You Page Section -->
-        <section id="thank-you" class="thank-you-page" style="display: none;">
+
+         <!-- Thank You Page Section -->
+         <section id="thank-you" class="thank-you-page" style="display: none;">
             <h2>Thank You for Reaching Out!</h2>
             <p>Your message has been successfully sent. We will get back to you shortly.</p>
             <a href="#home" class="back-to-home" onclick="showSection('home')">Back to Home</a>
@@ -246,17 +265,19 @@
         <p>&copy; 2024 DM Enterprises - All Rights Reserved. Contact: <a href="mailto:dhruwmandal@gmail.com" style="color: #87cefa;">dhruwmandal@gmail.com</a></p>
     </footer>
 
-    <!-- JavaScript for Section Navigation -->
+    <!-- JavaScript for Section Navigation and Form Submission -->
     <script>
         function showSection(sectionId) {
-            // Hide all sections
             const sections = document.querySelectorAll('section');
             sections.forEach(section => section.classList.remove('active'));
-
-            // Show the selected section
             document.getElementById(sectionId).classList.add('active');
         }
-    </script>
+
+        // Simulate form submission for demo purposes
+        document.querySelector('form').onsubmit = function(event) {
+            event.preventDefault();
+            showSection('thank-you');  //
+        </script>
 
 </body>
 </html>
